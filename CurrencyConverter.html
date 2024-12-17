@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCurrencyConverter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="header">
+            Currency Converter
+        </div>
+    </div>
+    <div class="container">
+        <div class="actualbox">
+            <h2>Enter Amount</h2>
+            <input type="text" class="typebox" placeholder="Enter value">
+            <div class="conversion">
+                <div class="from">
+                    <div class="fromholder">
+                        <p>From</p>
+                    </div>
+                    <div class="firstflagholder" style="display: flex; justify-content: space-between; align-items: center;">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="US Flag" width="40">
+                        <select name="from" id="selector">
+                            <option value="usd" selected>USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="inr">INR</option>
+                            <option value="gbp">GBP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="converticon">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="to">
+                    <div class="toholder">
+                        <p>To</p>
+                    </div>
+                    <div class="secondflagholder" style="display: flex; justify-content: space-between; align-items: center;">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="IN Flag" width="40">
+                        <select name="to" id = "selector">
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="inr" selected>INR</option>
+                            <option value="gbp">GBP</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="output">
+                <p>Converted Value: <span id="outputValue">-</span></p>
+            </div>
+            <div class="convertbutton">
+                <button type="button">Convert</button>
+            </div>
+        </div>
+    </div>
+    <script src="codes.js"></script>
+    <script src="currencyConverter.js"></script>
+</body>
+</html>
